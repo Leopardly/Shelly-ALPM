@@ -10,9 +10,9 @@ using Spectre.Console.Cli;
 
 namespace Shelly_CLI.Commands.Standard;
 
-public class ListUpdatesCommand : Command<ListSettings>
+public class ListUpdatesCommand : Command<AlpmListSettings>
 {
-    public override int Execute([NotNull] CommandContext context, [NotNull] ListSettings settings)
+    public override int Execute([NotNull] CommandContext context, [NotNull] AlpmListSettings settings)
     {
         if (Program.IsUiMode)
         {
@@ -95,7 +95,7 @@ public class ListUpdatesCommand : Command<ListSettings>
         return $"{size:0.##} {sizes[order]}";
     }
 
-    private static int HandleUiModeListUpdates(ListSettings settings)
+    private static int HandleUiModeListUpdates(AlpmListSettings settings)
     {
         using var manager = new AlpmManager();
         var dbPath = XdgPaths.ShellyCache("db");
