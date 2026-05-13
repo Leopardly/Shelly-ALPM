@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <IsAotCompatible>true</IsAotCompatible>
+        <IsTrimmable>true</IsTrimmable>
+        <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+        <EnableAotAnalyzer>true</EnableAotAnalyzer>
+        <EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <RuntimeIdentifiers>linux-x64;linux-arm64</RuntimeIdentifiers>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>Shelly.Pty</PackageId>
+        <Version>0.1.0</Version>
+        <AssemblyTitle>Shelly Pty</AssemblyTitle>
+        <Description>AOT-friendly Linux PTY wrapper for .NET. Supports headless and interactive modes.</Description>
+        <Company>Seafoam Labs</Company>
+        <Product>Shelly Pty by Seafoam Labs</Product>
+        <Copyright>2026 Seafoam Labs</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>pty;linux;terminal;aot;shelly</PackageTags>
+    </PropertyGroup>
+
+</Project>

@@ -13,4 +13,6 @@
   <Project Path="Shelly.Gtk/Shelly.Gtk.csproj" />
   <Project Path="Shelly.Gtk.Tests/Shelly.Gtk.Tests.csproj" />
   <Project Path="Shelly.Keys/Shelly.Keys.csproj" />
+  <Project Path="Shelly.Pty/Shelly.Pty.csproj" />
+  <Project Path="samples/Shelly.Pty.AotSmoke/Shelly.Pty.AotSmoke.csproj" />
 </Solution>
